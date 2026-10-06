@@ -20,7 +20,16 @@ Install the required tools:
 
 ```sh
 sudo apt update
-sudo apt install -y mkosi qemu-system-x86 ovmf debootstrap
+sudo apt install -y mkosi qemu-system-x86 ovmf debootstrap poadman
+```
+## mkosi issue on Ubuntu >= 24.04.5 LTS
+
+On >= 24.04.5 LTS `mkosi` packaged version is outdated.
+Building images requires options that older `mkosi` versions not support like `UnifiedKernelImages=no` and `KernelModulesInitrd=no`
+downlod form latest version using upstream repository works
+
+```sh
+pipx install git+https://github.com/systemd/mkosi.git
 ```
 
 ## View Configuration
