@@ -119,7 +119,7 @@ chmod +x run-qemu.sh
 ./run-qemu.sh
 ```
 
-## Application testing in mechanix QEMU simmulation
+## Application testing in mechanix QEMU simulation
 
 > if you are using this then you need `dnf` package manager
 
@@ -129,7 +129,7 @@ mkosi --profile=mqs -f build
 ## inside container
 
 ```sh
-./build.sh --profile=mqs       # mechanix qemu simmulation
+./build.sh --profile=mqs  # mechanix qemu simulation
 ```
 ## SSH over USB-C
 
