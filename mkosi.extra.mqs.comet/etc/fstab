@@ -1,0 +1,1 @@
+share  /mnt  9p  trans=virtio,version=9p2000.L,nofail,_netdev  0  0

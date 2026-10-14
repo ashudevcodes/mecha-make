@@ -119,6 +119,18 @@ chmod +x run-qemu.sh
 ./run-qemu.sh
 ```
 
+## Application testing in mechanix QEMU simmulation
+
+> if you are using this then you need `dnf` package manager
+
+```sh
+mkosi --profile=mqs -f build
+```
+## inside container
+
+```sh
+./build.sh --profile=mqs       # mechanix qemu simmulation
+```
 ## SSH over USB-C
 
 The comet image exposes a USB ethernet gadget (`usb0` = `172.16.42.1/24`) on
